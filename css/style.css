@@ -1,0 +1,194 @@
+:root {
+    --main-mardi-gras: #8c0375;
+    --main-electric-purple: #c004d9;
+    --main-mauveine: #9303a6;
+    --main-chrysler-blue: #5d04d9;
+    --main-egyptian-blue: #03318c;
+    --main-platinum: #E5E5E5;
+    --main-platinum-transparent: rgba(229, 229, 229, 0.30);
+}
+
+html,
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+.header_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-chrysler-blue);
+}
+
+.img_header {
+    width: 130px;
+}
+
+.text_header {
+    font-size: larger;
+    color: var(--main-platinum);
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.productos {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/*mis productos*/
+.lista-productos {
+    gap: 20px;
+}
+
+/*card*/
+.card__section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.ul__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;    
+    width: 800px;
+    height: 400px;
+}
+
+.card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+    background: var(--main-chrysler-blue);
+    color: var(--main-platinum);
+    font-size: 10px
+}
+
+.card__image {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card__nombre {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.card__borrar {
+    background: var(--main-egyptian-blue);
+    color: var(--main-platinum);
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+
+/*agregar productos*/
+.agregar-productos {
+    order: 1;
+    gap: 20px;
+
+}
+
+/*forumulario*/
+.formulario-agregar-productos {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    gap: 20px;
+    padding: 10px;
+}
+
+input {
+    border-radius: 25px;
+    padding: 10px;
+    border: var(--main-egyptian-blue) solid 2px;
+    width: 300px;
+}
+
+/*botones*/
+.botones {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.boton-enviar {
+    background: var(--main-egyptian-blue);
+    color: var(--main-platinum);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.boton-enviar:hover {
+    background: white;
+    color: var(--main-egyptian-blue);
+    border: var(--main-egyptian-blue) solid 2px;
+}
+
+.boton-limpiar {
+    border: var(--main-egyptian-blue) solid 2px;
+    color: var(--main-egyptian-blue);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.boton-limpiar:hover {
+    background: var(--main-egyptian-blue);
+    color: var(--main-platinum);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-content {
+    text-align: center;
+    background: var(--main-chrysler-blue);
+    padding: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+}
+
+.img_footer {
+    width: 100px;
+}
+
+.texto_footer {
+    color: var(--main-platinum);
+}
