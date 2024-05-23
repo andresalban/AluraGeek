@@ -1,0 +1,64 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Samsung A20",
+      "precio": "$ 97.03",
+      "imagen": "http://dummyimage.com/128x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": "2",
+      "nombre": "Samsung S22",
+      "precio": "$ 97.03",
+      "imagen": "http://dummyimage.com/146x100.png/cc0000/ffffff"
+    },
+    {
+      "id": "3",
+      "nombre": "Nokia N-Gage QD",
+      "precio": "$ 97.03",
+      "imagen": "http://dummyimage.com/192x100.png/dddddd/000000"
+    },
+    {
+      "id": "4",
+      "nombre": "XOLO Omega 5.0",
+      "precio": "$ 97.03",
+      "imagen": "http://dummyimage.com/241x100.png/dddddd/000000"
+    },
+    {
+      "id": "5",
+      "nombre": "Alcatel Pop Astro",
+      "precio": "$ 97.03",
+      "imagen": "http://dummyimage.com/234x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": "6",
+      "nombre": "Iphone X",
+      "precio": "$ 97.03",
+      "imagen": "http://dummyimage.com/148x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": "7",
+      "nombre": "Sony W300",
+      "precio": "$ 97.03",
+      "imagen": "http://dummyimage.com/239x100.png/ff4444/ffffff"
+    },
+    {
+      "id": "8",
+      "nombre": "ZTE Blade A3",
+      "precio": "$ 97.03",
+      "imagen": "http://dummyimage.com/227x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": "9",
+      "nombre": "Iphone Xs",
+      "precio": "$ 97.03",
+      "imagen": "http://dummyimage.com/189x100.png/cc0000/ffffff"
+    },
+    {
+      "id": "10",
+      "nombre": "Huawei P10",
+      "precio": "$ 97.03",
+      "imagen": "http://dummyimage.com/176x100.png/5fa2dd/ffffff"
+    }
+  ]
+}
