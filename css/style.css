@@ -26,7 +26,7 @@ body {
 }
 
 .img_header {
-    width: 130px;
+    width: 100px;
 }
 
 .text_header {
@@ -84,7 +84,6 @@ main {
     align-items: center;
     margin: 10px;
     width: 190px;
-    font-size: 10px;
     padding: 10px;
 
 }
@@ -123,6 +122,10 @@ main {
 }
 .card__precio{
     padding: 10px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
 
 }
 
@@ -134,7 +137,8 @@ main {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px;    font-size: 10px;
+
 }
 
 .img_delete{

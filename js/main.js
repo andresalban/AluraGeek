@@ -10,7 +10,8 @@ function limpiarFormulario(){
     document.querySelector("[data-imagen]").value = "";
 }
 
-function mostrarProducto(nombre, precio, imagen,id) {
+function mostrarProducto(id,nombre, precio, imagen) {
+
     const producto = document.createElement("li");
     producto.className = "card";
     producto.innerHTML = `
@@ -20,10 +21,15 @@ function mostrarProducto(nombre, precio, imagen,id) {
         <div class="card__info">
           <p class="card__nombre">${nombre}</p>
           <p class="card__precio">${precio}</p>
-          <p data-eliminar class="card__borrar"  id="${id}">Eliminar <img class="img_delete" src="../img/delete-icon.png"></p>
+          <p  class="card__borrar"  data-id="${id}">Eliminar <img class="img_delete" src="../img/delete-icon.png"></p>
         </div>
         `
+    const botonBorrar = producto.querySelector("[data-id]")
 
+    botonBorrar.addEventListener("click",async ()=>{
+         await conexionAPI.borrarProducto(id)
+        producto.remove()
+    })
     return producto
 
 }
@@ -41,7 +47,7 @@ async function crearProducto(evento) {
 
 async function listarProductos() {
     const listaAPI = await conexionAPI.listarProductos()
-    listaAPI.forEach(producto => lista.appendChild(mostrarProducto(producto.nombre, producto.precio, producto.imagen)))
+    listaAPI.forEach(producto => lista.appendChild(mostrarProducto(producto.id, producto.nombre, producto.precio, producto.imagen)))
 }
 
 

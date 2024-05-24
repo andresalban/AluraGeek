@@ -16,9 +16,16 @@ async function enviarProducto(nombre,precio,imagen)  {
     return conexion.json();
 }
 
+async function borrarProducto(id){
+    const conexion=await fetch(`http://localhost:3001/productos/${id}`,{
+        method: "DELETE"
+    })
+    return conexion.ok
+}
 
 export const conexionAPI = {
     listarProductos,
-    enviarProducto
+    enviarProducto,
+    borrarProducto
 
 }
